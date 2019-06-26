@@ -1,0 +1,100 @@
+body {
+  text-align: center;
+  background-color: #f6f6f6;
+}
+
+.mainCircle {
+  position: relative;
+  z-index: 0;
+  width: 80px;
+  height: 80px;
+  margin: 300px auto;
+  line-height: 80px;
+  border-radius: 50%;
+  font-size: 12px;
+}
+
+.subCircle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  line-height: 80px;
+  position: absolute;
+  top: 0;
+  transition: 0.5s;
+  color: white;
+  i {
+    line-height: 80px;
+  }
+  &:hover{
+    cursor: pointer;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.4);
+  }
+}
+
+.circle0 {
+  z-index: 10;
+  background-color: black;
+}
+
+.circle1 {
+  z-index: 1;
+  background-color: aqua;
+}
+.circle2 {
+  z-index: 2;
+  background-color: orange;
+}
+.circle3 {
+  z-index: 3;
+  background-color: red;
+}
+.circle4 {
+  z-index: 4;
+  background-color: skyblue;
+}
+.circle5 {
+  z-index: 5;
+  background-color: yellowgreen;
+}
+.circle6 {
+  z-index: 6;
+  background-color: gray;
+}
+.circle7 {
+  z-index: 7;
+  background-color: purple;
+}
+.circle8 {
+  z-index: 8;
+  background-color: navy;
+}
+
+.moveTop {
+  transform: translateY(-150px);
+}
+.moveRight{
+  transform: translateX(150px);
+}
+.moveLeft{
+  transform: translateX(-150px);
+}
+.moveBottom{
+  transform: translateY(150px);
+}
+.moveTopRight{
+  transform: translate(120px,-120px);
+}
+.moveBottomRight{
+  transform: translate(120px,120px);
+}
+.moveTopLeft{
+  transform: translate(-120px,-120px);
+}
+.moveBottomLeft{
+  transform: translate(-120px,120px);
+}
+
+.changeScale{
+  transform: scale(0.8,0.8);
+}
