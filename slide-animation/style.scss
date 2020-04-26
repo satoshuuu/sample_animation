@@ -1,0 +1,27 @@
+.swiper-slide {
+    height: 500px;
+
+    & > img {
+            width: 100%;
+            height: 100%;
+            max-width: 100%;
+            object-fit: cover;
+    }
+
+    & > .title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #535353;
+        font-size: 25px;
+        opacity: 0;
+        transition: opacity 0.3s ease 0.8s;
+    }
+
+    &-active {
+        & > .title {
+            opacity: 1;
+        }
+    }
+}
