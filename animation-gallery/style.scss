@@ -102,3 +102,19 @@ a {
     line-height: 1.5;
   }
 }
+
+//　モバイル版 -----------------
+@media (max-width: 600px) {
+    #page-title {
+        font-size: 30px;
+    }
+    .gallery {
+        padding: 20px 10% 30px;
+        &__title {
+            margin: 20px 0;
+            & h2 {
+                margin: 10px 0;
+            }
+        }
+    }
+}
